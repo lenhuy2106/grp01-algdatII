@@ -1,2 +1,6 @@
 language: cpp
 compiler: gcc
+
+cmake . 
+make
+./SearchIt
