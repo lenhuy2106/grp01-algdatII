@@ -16,8 +16,12 @@ addons:
 
 
 language: cpp
+
 compiler: gcc-5
+
 env: COMPILER=g++-5
+env: CXX=g++-5
+env: CC=gcc-5
 
 # install:
 
