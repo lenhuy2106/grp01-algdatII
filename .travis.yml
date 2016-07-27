@@ -28,6 +28,5 @@ env: CC=gcc-5
 
 script:
   - cd build
-  - cmake ../. 
-  - make
+  - cmake -DCMAKE_CXX_COMPILER=$COMPILER ../. && make
   - ./SearchIt
