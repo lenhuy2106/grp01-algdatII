@@ -2,6 +2,7 @@
 sudo: required
 dist: trusty
 
+compiler: gcc
 addons:
   apt:
     sources:
@@ -14,19 +15,19 @@ addons:
     - g++-5
 #    - clang-3.6
 
+env: COMPILER=g++-5
+
 
 language: cpp
 
-compiler: gcc
 
-env: COMPILER=g++-5
-
-env: CXX=g++-5
-env: CC=gcc-5
+#env: CXX=g++-5
+#env: CC=gcc-5
 
 # install:
 
 script:
   - cd build
+  - echo $CXX
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER ../. && make
   - ./SearchIt
