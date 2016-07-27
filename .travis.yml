@@ -1,6 +1,6 @@
 # Using Modern ubuntu
 sudo: required
-dist: Xenial Xerus
+dist: Xenial
 
 
 language: cpp
