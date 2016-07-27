@@ -1,3 +1,8 @@
+# Using Modern ubuntu
+sudo: required
+dist: Xenial Xerus
+
+
 language: cpp
 compiler: gcc
 
