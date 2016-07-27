@@ -16,7 +16,14 @@ addons:
 
 
 language: cpp
-compiler: gcc-5
+compiler: gcc
+  addons:
+    apt:
+      sources:
+        - ubuntu-toolchain-r-test
+      packages:
+        - g++-5
+  env: COMPILER=g++-5
 
 # install:
 
