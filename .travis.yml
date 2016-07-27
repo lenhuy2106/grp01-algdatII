@@ -1,6 +1,10 @@
 language: cpp
 compiler: gcc
 
-cmake . 
-make
-./SearchIt
+# install:
+
+script:
+  - cd build
+  - cmake ../. 
+  - make
+  - ./SearchIt
