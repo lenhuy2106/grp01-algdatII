@@ -18,6 +18,12 @@ bool TextWord::exactMatch(const std::string word) {
     return matchTree.possibleMatch(word);
   }
 }
+
+bool TextWord::partialMatch(const std::string word) {
+  std::cout << "Partial Match for '" << value << "' with '" << word <<"'!" << std::endl;
+  return matchTree.possibleMatch(word);
+}
+
 void TextWord::status() {
 
   std::cout << "####################" << std::endl << "Word: " << value

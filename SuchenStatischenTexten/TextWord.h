@@ -19,6 +19,8 @@ class TextWord {
 
   bool exactMatch(const std::string word);
 
+  bool partialMatch(const std::string word);
+
   void status();
 
 };

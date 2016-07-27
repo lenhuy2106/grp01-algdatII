@@ -33,11 +33,13 @@ bool SufTree::Knot::match(char testedChar) const{
 
 bool SufTree::Knot::search(const std::string word) const {
   bool result = false;
-  if(word.length()== 1) {
-    result = match(word.front());
-  } else {
-    for (auto &&next : nextKnots) {
-      result |= next.search(word.substr(1));
+  if(this->match(word.front())){
+    if(word.length() == 1) {
+      result = isLeaf;
+    } else {
+      for (auto &&next : nextKnots) {
+        result |= next.search(word.substr(1));
+      }
     }
   }
   return result;
@@ -87,6 +89,5 @@ bool SufTree::possibleMatch(const std::string searchedWord) const{
   for (auto &&branch : branches) {
     result |= branch.search(searchedWord);
   }
-
-  return false;
+  return result;
 }

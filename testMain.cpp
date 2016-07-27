@@ -18,6 +18,19 @@ int main(int argc, char const *argv[])
   if (test.exactMatch("blub")) {
     std::cout << "found blub" << std::endl;
   }
+  if (test.partialMatch("b")) {
+    std::cout << "found b" << std::endl;
+  }
+  if (test.partialMatch("xlub")) {
+    std::cout << "found xlub!!! error" << std::endl;
+  }
+  if (test.partialMatch("lub")) {
+    std::cout << "found lub" << std::endl;
+  }
+  if (test.partialMatch("blub")) {
+    std::cout << "found blub" << std::endl;
+  }
+  
   test.status();
 
 
