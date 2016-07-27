@@ -16,7 +16,7 @@ addons:
 
 
 language: cpp
-compiler: gcc
+compiler: gcc-5
 
 # install:
 
