@@ -17,9 +17,10 @@ addons:
 
 language: cpp
 
-compiler: gcc-5
+compiler: gcc
 
 env: COMPILER=g++-5
+
 env: CXX=g++-5
 env: CC=gcc-5
 
