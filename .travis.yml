@@ -1,6 +1,6 @@
 # Using Modern ubuntu
 sudo: required
-dist: Xenial
+dist: trusty
 
 
 language: cpp
