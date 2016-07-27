@@ -28,6 +28,5 @@ language: cpp
 
 script:
   - cd build
-  - echo $CXX
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER ../. && make
   - ./SearchIt
