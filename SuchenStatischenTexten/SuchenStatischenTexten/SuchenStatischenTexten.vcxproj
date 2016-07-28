@@ -79,9 +79,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Test.h" />
+    <ClInclude Include="SufTree.h" />
+    <ClInclude Include="TextWord.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test.cpp" />
+    <ClCompile Include="SufTree.cpp" />
+    <ClCompile Include="TextWord.cpp" />
+    <ClCompile Include="testMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,8 +1,8 @@
 
 #include <iostream>
 #include <fstream>
-#include "SuchenStatischenTexten/SufTree.h"
-#include "SuchenStatischenTexten/TextWord.h"
+#include "SufTree.h"
+#include "TextWord.h"
 
 int main(int argc, char const *argv[])
 {

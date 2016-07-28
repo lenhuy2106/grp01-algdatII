@@ -10,7 +10,7 @@ set(SOURCE_FILES
         SuchenStatischenTexten/TextWord.cpp
         )
 
-set(TEST_LANCHER testMain.cpp)
+set(TEST_LANCHER SuchenStatischenTexten/testMain.cpp)
 
 set(NORMAL_LANCHER SuchenStatischenTexten/SearchIt.cpp)
 
