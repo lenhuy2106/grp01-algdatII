@@ -30,3 +30,5 @@ script:
   - cd build
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER ../. && make
   - ./SearchIt
+  - blub
+  - ./SearchItTest

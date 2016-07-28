@@ -17,5 +17,4 @@ set(NORMAL_LANCHER SuchenStatischenTexten/SearchIt.cpp)
 
 add_executable(SearchItTest ${TEST_LANCHER} ${SOURCE_FILES})
 
-project(SearchItTest)
 add_executable(SearchIt ${NORMAL_LANCHER} ${SOURCE_FILES})
