@@ -8,6 +8,9 @@ set(SOURCE_FILES
         SuchenStatischenTexten/SufTree.cpp
         SuchenStatischenTexten/TextWord.h
         SuchenStatischenTexten/TextWord.cpp
+        SuchenStatischenTexten/TheText.h
+        SuchenStatischenTexten/TheText.cpp
+        SuchenStatischenTexten/SuchenStatischenTexten/IOParser.h
         )
 
 set(TEST_LANCHER SuchenStatischenTexten/testMain.cpp)

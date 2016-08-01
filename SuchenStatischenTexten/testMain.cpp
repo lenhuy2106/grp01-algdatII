@@ -1,8 +1,7 @@
 
 #include <iostream>
 #include <fstream>
-#include "SufTree.h"
-#include "TextWord.h"
+#include "TheText.h"
 
 int main(int argc, char const *argv[])
 {
@@ -34,20 +33,12 @@ int main(int argc, char const *argv[])
   
   test.status();
 
-  std::ifstream testFile;
+  TheText testText("input.txt");
 
-  char tmp[255];
-  testFile.open("./Readme.md");
+  std::cout << "Total number of words: " << testText.wordCount() << std::endl;
 
-  if(testFile.is_open()) {
-    std::cout << "reading test file:" << std::endl;
+  std::cout << "Count of 'der': " << testText.exactMatchCount("der") << std::endl;
 
-    while (!testFile.eof()) {
-      testFile.getline(tmp,255);
-      std::cout << tmp;
-    }
-
-  }
 
 
 

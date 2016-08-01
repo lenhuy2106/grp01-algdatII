@@ -13,13 +13,18 @@ class TextWord {
   const std::string value;
   const SufTree matchTree;
  public:
-  TextWord(const std::string word): value(word), length(word.length()),matchTree(word), count(1){}
+  TextWord(const std::string word): value(word), length(word.length()),matchTree(word), count(1){
+    std::cout << "+++ Created new Entry with " << word << std::endl;
+  }
 
-  void addInstance(const std::string word);
+  bool addInstance(const std::string word);
 
   bool exactMatch(const std::string word);
 
   bool partialMatch(const std::string word);
+
+  std::string word() const;
+  int wordCount() const;
 
   void status();
 
