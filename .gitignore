@@ -1,3 +1,6 @@
 SuchenStatischenTexten/Debug/SuchenStatischenTexten.exe
 SuchenStatischenTexten/Debug/
 SuchenStatischenTexten/SuchenStatischenTexten/Debug/
+/.idea
+/CMakeFiles
+*.cmake
