@@ -1,0 +1,33 @@
+# Using Modern ubuntu
+sudo: required
+dist: trusty
+
+compiler: gcc
+addons:
+  apt:
+    sources:
+    # add PPAs with more up-to-date toolchains
+    - ubuntu-toolchain-r-test
+#    - llvm-toolchain-precise-3.6
+    packages:
+    # install toolchains
+    - gcc-5
+    - g++-5
+#    - clang-3.6
+
+env: COMPILER=g++-5
+
+
+language: cpp
+
+
+#env: CXX=g++-5
+#env: CC=gcc-5
+
+# install:
+
+script:
+  - cd build
+  - cmake -DCMAKE_CXX_COMPILER=$COMPILER ../. && make
+  - ./SearchIt < blub
+  - ./SearchItTest
