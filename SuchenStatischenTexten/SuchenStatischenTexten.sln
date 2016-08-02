@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleTest", "GoogleTest\Go
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unittest_SuchenStatischenTexten", "unittest_SuchenStatischenTexten\unittest_SuchenStatischenTexten.vcxproj", "{22227E4F-3EC7-4E3A-ADB6-23B94D3E3EB3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sources", "Sources\Sources.vcxproj", "{94E239BD-A799-49AF-AEB2-29A8ED860CB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{22227E4F-3EC7-4E3A-ADB6-23B94D3E3EB3}.Debug|Win32.Build.0 = Debug|Win32
 		{22227E4F-3EC7-4E3A-ADB6-23B94D3E3EB3}.Release|Win32.ActiveCfg = Release|Win32
 		{22227E4F-3EC7-4E3A-ADB6-23B94D3E3EB3}.Release|Win32.Build.0 = Release|Win32
+		{94E239BD-A799-49AF-AEB2-29A8ED860CB5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{94E239BD-A799-49AF-AEB2-29A8ED860CB5}.Debug|Win32.Build.0 = Debug|Win32
+		{94E239BD-A799-49AF-AEB2-29A8ED860CB5}.Release|Win32.ActiveCfg = Release|Win32
+		{94E239BD-A799-49AF-AEB2-29A8ED860CB5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

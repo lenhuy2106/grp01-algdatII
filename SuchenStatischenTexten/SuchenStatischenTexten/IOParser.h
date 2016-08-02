@@ -1,9 +1,11 @@
+#ifndef IOPARSER_H
+#define IOPARSER_H
+
 #include <iostream>
 #include <fstream>
-#include <string>
-#include <vector>
 #include <sstream>
 #include <iterator>
+#include <vector>
 
 /**
  * Helper function for loading text.
@@ -35,3 +37,4 @@ std::vector<std::string> splitString(const std::string input){
 	return tokens;
 }
 
+#endif //IOPARSER_H

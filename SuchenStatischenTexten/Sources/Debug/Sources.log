@@ -1,0 +1,18 @@
+﻿Der Buildvorgang wurde am 02.08.2016 16:07:32 gestartet.
+     1>Projekt "C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\Sources\Sources.vcxproj" auf Knoten "3", Build Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\SuchenStatischenTexten\SufTree.cpp ..\SuchenStatischenTexten\TextWord.cpp ..\SuchenStatischenTexten\TheText.cpp
+         TheText.cpp
+         TextWord.cpp
+         SufTree.cpp
+         Code wird generiert...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\Debug\Sources.lib" /NOLOGO Debug\SufTree.obj
+         Debug\TextWord.obj
+         Debug\TheText.obj
+         Sources.vcxproj -> C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\Debug\Sources.lib
+     1>Die Erstellung des Projekts "C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\Sources\Sources.vcxproj" ist abgeschlossen, Build Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:01.25

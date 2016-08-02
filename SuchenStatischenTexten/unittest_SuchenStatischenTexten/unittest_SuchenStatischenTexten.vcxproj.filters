@@ -15,10 +15,20 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="GTestIOImport.txt" />
+    <Text Include="unittest_TheText.txt" />
+    <Text Include="unittest_IOParser.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GTests.cpp">
+    <ClCompile Include="main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="unittest_IOParser.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="unittest_SufTree.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="unittest_TextWord.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

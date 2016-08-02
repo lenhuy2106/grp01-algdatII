@@ -43,6 +43,7 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)\SuchenStatischenTexten;$(SolutionDir)\libs\gtest-1.7.0\include;$(SolutionDir)\libs\gtest-1.7.0;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)\Debug;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -59,7 +60,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>GoogleTest.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>GoogleTest.lib;Sources.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -86,10 +87,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="GTestIOImport.txt" />
+    <Text Include="unittest_IOParser.txt" />
+    <Text Include="unittest_TheText.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GTests.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="unittest_SufTree.cpp" />
+    <ClCompile Include="unittest_IOParser.cpp" />
+    <ClCompile Include="unittest_TextWord.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
