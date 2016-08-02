@@ -18,12 +18,30 @@
     <ClInclude Include="Test.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="..\SufTree.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TextWord.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="IOParser.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TheText.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Test.cpp">
+    <ClCompile Include="..\SufTree.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="IOParser.cpp">
+    <ClCompile Include="..\TextWord.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\testMain.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TheText.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
@@ -31,8 +49,5 @@
     <Text Include="input.txt">
       <Filter>Ressourcendateien</Filter>
     </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
 </Project>
