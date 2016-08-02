@@ -81,15 +81,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Test.h" />
-    <ClInclude Include="SufTree.h" />
-    <ClInclude Include="TextWord.h" />
+    <ClInclude Include="..\SufTree.h" />
+    <ClInclude Include="..\TextWord.h" />
+    <ClInclude Include="IOParser.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="IOParser.cpp" />
     <ClCompile Include="Test.cpp" />
-    <ClCompile Include="SufTree.cpp" />
-    <ClCompile Include="TextWord.cpp" />
-    <ClCompile Include="testMain.cpp" />
+    <ClCompile Include="..\SufTree.cpp" />
+    <ClCompile Include="..\TextWord.cpp" />
+    <ClCompile Include="..\testMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
