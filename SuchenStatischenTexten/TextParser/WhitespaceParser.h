@@ -9,12 +9,20 @@
 
 
 static std::string ignoredChars = ",;.:_'#+*!\"§$%&/()=?";
-
+/**
+*
+*/
 class WhitespaceParser : public Parser {
  private:
   bool isIgnoredChar(const char checkedChar);
  public:
+  /**
+  * @param filename 
+  */
   WhitespaceParser(std::string fileName);
+  /**
+  * @param
+  */
   virtual std::vector<std::string> parseText() override;
 };
 
