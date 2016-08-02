@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)\SuchenStatischenTexten;$(SolutionDir)\libs\gtest-1.7.0\include;$(SolutionDir)\libs\gtest-1.7.0;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\Debug;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
