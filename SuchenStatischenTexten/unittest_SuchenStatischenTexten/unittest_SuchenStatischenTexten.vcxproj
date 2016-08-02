@@ -41,7 +41,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\SuchenStatischenTexten;C:\Users\Tim\Downloads\gtest-1.7.0\include;C:\Users\Tim\Downloads\gtest-1.7.0;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)\SuchenStatischenTexten;$(SolutionDir)\libs\gtest-1.7.0\include;$(SolutionDir)\libs\gtest-1.7.0;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
