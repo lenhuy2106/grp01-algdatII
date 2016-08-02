@@ -89,7 +89,6 @@
   <ItemGroup>
     <ClCompile Include="..\SufTree.cpp" />
     <ClCompile Include="..\TextWord.cpp" />
-    <ClCompile Include="..\testMain.cpp" />
     <ClCompile Include="..\TheText.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -38,9 +38,6 @@
     <ClCompile Include="..\TextWord.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\testMain.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="..\TheText.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
