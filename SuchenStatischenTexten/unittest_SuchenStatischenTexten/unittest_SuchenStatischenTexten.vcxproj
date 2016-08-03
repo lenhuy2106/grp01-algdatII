@@ -95,6 +95,7 @@
     <ClCompile Include="unittest_SufTree.cpp" />
     <ClCompile Include="unittest_IOParser.cpp" />
     <ClCompile Include="unittest_TextWord.cpp" />
+    <ClCompile Include="unittest_TheText.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
