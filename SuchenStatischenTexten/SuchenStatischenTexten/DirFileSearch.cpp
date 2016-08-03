@@ -4,28 +4,26 @@
 
 #include "DirFileSearch.h"
 
-DirFileSearch::DirFileSearch(const std::string folderPath) {
+DirFileSearch::DirFileSearch(const std::string folderPath, const std::string fileExtension) {
   auto path = opendir(folderPath.data());
   if (path != nullptr) {
     auto file = readdir(path);
     while (file != NULL) {
-      if (file->d_type == 8) {
-        std::cout << "Reading file: " << file->d_name << " as " << static_cast<int>(file->d_type) << std::endl;
-        allFiles.push_back(TheText(file->d_name));
+      if (file->d_type == DT_REG) {
+        std::string tmpFile(file->d_name);
+        if ( tmpFile.find(fileExtension) != std::string::npos) {
+          allFiles.push_back(TheText(file->d_name));
+        }
       }
       file = readdir(path);
     }
   }
-  std::cout << "Number of readin files: " << allFiles.size() << std::endl;
-  for (auto &&file : allFiles) {
-    std::cout << file.name() << std::endl;
-  }
 }
 
-std::vector<int> DirFileSearch::exactSearch(const std::string word) {
-  std::vector<int> foundCounts;
+std::map<std::string, unsigned int> DirFileSearch::exactSearch(const std::string word) {
+  std::map<std::string, unsigned int> foundCounts;
   for (auto &&file : allFiles) {
-    foundCounts.push_back(file.exactMatchCount(word));
+    foundCounts.insert(std::pair<std::string, unsigned int>(file.name(),file.exactMatchCount(word)));
   }
   return foundCounts;
 }

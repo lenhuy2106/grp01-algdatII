@@ -10,13 +10,30 @@
 
 #include <dirent.h>
 #include "TheText.h"
+
+/**
+ * Class used for searching in a directory.
+ */
 class DirFileSearch {
  private:
+  /**
+   * All readin files.
+   */
   std::vector<TheText> allFiles;
  public:
-  DirFileSearch(const std::string folderPath = ".");
+  /**
+   * Constructor.
+   * @param folderPath Path used for search.
+   * @return A initialized DirFileSearch object.
+   */
+  DirFileSearch(const std::string folderPath = ".", std::string fileExtension = ".txt");
 
-  std::vector<int> exactSearch(const std::string word);
+  /**
+   * The count of the searched word in all files.
+   * @param word The searched word.
+   * @return
+   */
+  std::map<std::string, unsigned int> exactSearch(const std::string word);
 
   std::vector<std::string> files();
 };

@@ -19,8 +19,12 @@ class IOHelper{
     std::string input = "";
 
     std::ifstream read(file);
-    getline(read, input);
-    std::cout << input << std::endl;
+    std:: string tmp;
+    while (!read.eof()) {
+      getline(read, tmp);
+      input.append(tmp);
+    }
+    //std::cout << input << std::endl;
 
     return input;
   }

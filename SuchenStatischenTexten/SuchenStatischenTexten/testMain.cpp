@@ -45,12 +45,17 @@ int main(int argc, char const *argv[])
   for (auto &&item :testDir.files()) {
     std::cout << item << std::endl;
   }
-  
+
   std::vector<std::string> files = testDir.files();
-  std::vector<int> result = testDir.exactSearch("der");
-  for (unsigned int index = 0; index < result.size(); ++index) {
-    std::cout << "Count of 'der':"  << result.at(index) << " in file: " << files.at(index) << std::endl;
+  auto result = testDir.exactSearch("der");
+
+  for (auto &&element : result) {
+    std::cout << "Count of 'der': "  << element.second << " in file: " << element.first << std::endl;
   }
 
+  /*for (unsigned int index = 0; index < result.size(); ++index) {
+    std::cout << "Count of 'der': "  << result.at(index) << " in file: " << files.at(index) << std::endl;
+  }
+*/
   return 0;
 }
