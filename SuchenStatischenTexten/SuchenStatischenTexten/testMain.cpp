@@ -39,6 +39,10 @@ int main(int argc, char const *argv[])
 
   std::cout << "Count of 'der': " << testText.exactMatchCount("der") << std::endl;
 
+  std::cout << "Occurances of 'der':" << std::endl;
+  for (auto &&occurance :testText.getOccurances("der")) {
+    std::cout << "Index: " << occurance << std::endl;
+  }
 
   DirFileSearch testDir;
 
@@ -52,7 +56,6 @@ int main(int argc, char const *argv[])
   for (auto &&element : result) {
     std::cout << "Count of 'der': "  << element.second << " in file: " << element.first << std::endl;
   }
-
   /*for (unsigned int index = 0; index < result.size(); ++index) {
     std::cout << "Count of 'der': "  << result.at(index) << " in file: " << files.at(index) << std::endl;
   }

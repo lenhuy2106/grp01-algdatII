@@ -34,6 +34,16 @@ int TheText::exactMatchCount(const std::string searchedWord) {
   return 0;
 }
 
+std::vector<unsigned int> TheText::getOccurances(const std::string searchedWord) {
+  for (auto &&word : m_completeText) {
+    if (word.exactMatch(searchedWord)) {
+      return word.getOccurances();
+    }
+  }
+
+  return std::vector<unsigned int>();
+}
+
 
 int TheText::wordCount() {
   return m_completeText.size();

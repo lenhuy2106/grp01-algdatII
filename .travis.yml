@@ -29,4 +29,5 @@ language: cpp
 script:
   - cd build
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER ../. && make
+  - cp ../SuchenStatischenTexten/SuchenStatischenTexten/input.txt .
   - ./SearchItTest

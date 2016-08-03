@@ -33,6 +33,8 @@ class TheText {
   */
   int exactMatchCount(const std::string word);
 
+  std::vector<unsigned int> getOccurances(const std::string searchedWord);
+
   std::string name();
 };
 

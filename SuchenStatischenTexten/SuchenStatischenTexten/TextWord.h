@@ -60,6 +60,11 @@ class TextWord {
   */
   void status();
 
+  /**
+   * All occurances of the word in the text.
+   * @return The indexes in the text.
+   */
+  std::vector<unsigned int> getOccurances();
 };
 
 #endif //SEARCHIT_TEXTWORD_H

@@ -42,3 +42,6 @@ std::string TextWord::word() const {
 unsigned int TextWord::wordCount() const {
   return static_cast<unsigned int>(occurances.size());
 }
+std::vector<unsigned int> TextWord::getOccurances() {
+  return occurances;
+}
