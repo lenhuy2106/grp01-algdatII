@@ -8,7 +8,6 @@
 #include "TextWord.h"
 #include "IOParser.h"
 
-#include <map>
 /**
 * Represents the whole text as a model
 * This Model contains all word of the text as single objects
