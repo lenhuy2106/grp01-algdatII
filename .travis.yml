@@ -33,10 +33,13 @@ before_install:
  - "cd /usr/src/gtest && sudo cmake . && sudo cmake --build . && sudo mv libg* /home/travis/build/algdat/grp01-algdatII/build/ ; cd -"
 
 script:
-  - cd build
+  - mkdir build/test || true
+  - mkdir build/unittest || true
+  - cd build/test
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER ../. && make
   - cp ../SuchenStatischenTexten/SuchenStatischenTexten/input.txt .
   - cp ../Readme.md .
   - ./SearchItTest
+  - cd ../unittests
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER ../SuchenStatischenTexten/unittest_SuchenStatischenTexten/. && make
   - ./UnitTests
