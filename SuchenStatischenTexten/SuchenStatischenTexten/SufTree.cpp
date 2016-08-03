@@ -61,7 +61,7 @@ void SufTree::print() const {
 SufTree::SufTree(const std::string word) {
   std::string subString = word;
 
-  std::cout << "Creating tree for: " << word << std::endl;
+  //std::cout << "Creating tree for: " << word << std::endl;
   while (!subString.empty()){
     // fuege alle moeglichen suffixe hinzu
     //std::cout << subString << std::endl;

@@ -6,7 +6,8 @@
 TheText::TheText(std::string fileName) : m_fileName(fileName){
   std::vector<std::string> words = IOHelper::splitString(IOHelper::IOImport(fileName));
   std::cout << "####################" << std::endl
-            << "# Reading File" << std::endl
+            << "# Reading File :" << std::endl
+            << fileName << std::endl
             << "####################" << std::endl;
   for (int index = 0; index < words.size(); ++index)
   //for (auto &&word  : words)
@@ -22,7 +23,9 @@ TheText::TheText(std::string fileName) : m_fileName(fileName){
   }
   std::cout << "####################" << std::endl
             << "# Finished reading" << std::endl
-            << "####################" << std::endl;
+            << "Found " << m_completeText.size() << " words" << std::endl
+            << "####################" << std::endl
+            ;
 }
 
 int TheText::exactMatchCount(const std::string searchedWord) {

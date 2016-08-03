@@ -6,7 +6,7 @@
 bool TextWord::addInstance(const std::string word, const unsigned int index) {
   // std::cout << "checking instance with " << word << std::endl;
     if(this->exactMatch(word)) {
-      std::cout << "Incremented " << this->word() << std::endl;
+      // std::cout << "Incremented " << this->word() << std::endl;
       occurances.push_back(index);
       return true;
     }

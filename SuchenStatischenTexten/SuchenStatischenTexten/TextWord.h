@@ -26,7 +26,7 @@ class TextWord {
   */
   TextWord(const std::string word, const unsigned int index): value(word), length(word.length()),matchTree(word){
     occurances.push_back(index);
-    std::cout << "+++ Created new Entry with " << word << std::endl;
+    // std::cout << "+++ Created new Entry with '" << word << "'" << std::endl;
   }
   /**
   * Increments the Counter if searched word is exact match
