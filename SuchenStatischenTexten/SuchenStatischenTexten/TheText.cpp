@@ -3,19 +3,19 @@
 //
 #include "TheText.h"
 
-TheText::TheText(std::string fileName) {
-  std::vector<std::string> words = splitString(IOImport(fileName));
+TheText::TheText(std::string fileName) : m_fileName(fileName){
+  std::vector<std::string> words = IOHelper::splitString(IOHelper::IOImport(fileName));
   std::cout << "####################" << std::endl
             << "# Reading File" << std::endl
             << "####################" << std::endl;
   for (auto &&word  : words) {
     // std::cout << "Adding " << word << " to the list." << std::endl;
     bool existed = false;
-    for (auto &&textWord  : completeText) {
+    for (auto &&textWord  : m_completeText) {
       existed |= textWord.addInstance(word);
     }
     if (!existed) {
-      completeText.push_back(TextWord(word));
+      m_completeText.push_back(TextWord(word));
     }
   }
   std::cout << "####################" << std::endl
@@ -24,7 +24,7 @@ TheText::TheText(std::string fileName) {
 }
 
 int TheText::exactMatchCount(const std::string searchedWord) {
-  for (auto &&word : completeText) {
+  for (auto &&word : m_completeText) {
     if(word.exactMatch(searchedWord)) {
       return word.wordCount();
     }
@@ -34,5 +34,8 @@ int TheText::exactMatchCount(const std::string searchedWord) {
 
 
 int TheText::wordCount() {
-  return completeText.size();
+  return m_completeText.size();
+}
+std::string TheText::name() {
+  return m_fileName;
 }

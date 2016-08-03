@@ -4,18 +4,20 @@ project(SearchIt)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES
-        SuchenStatischenTexten/SufTree.h
-        SuchenStatischenTexten/SufTree.cpp
-        SuchenStatischenTexten/TextWord.h
-        SuchenStatischenTexten/TextWord.cpp
-        SuchenStatischenTexten/TheText.h
-        SuchenStatischenTexten/TheText.cpp
+        SuchenStatischenTexten/SuchenStatischenTexten/SufTree.h
         SuchenStatischenTexten/SuchenStatischenTexten/IOParser.h
+        SuchenStatischenTexten/SuchenStatischenTexten/TextWord.h
+        SuchenStatischenTexten/SuchenStatischenTexten/TheText.h
+        SuchenStatischenTexten/SuchenStatischenTexten/SufTree.cpp
+        SuchenStatischenTexten/SuchenStatischenTexten/TextWord.cpp
+        SuchenStatischenTexten/SuchenStatischenTexten/TheText.cpp
+        SuchenStatischenTexten/SuchenStatischenTexten/DirFileSearch.h
+        SuchenStatischenTexten/SuchenStatischenTexten/DirFileSearch.cpp
         )
 
-set(TEST_LANCHER SuchenStatischenTexten/testMain.cpp)
+set(TEST_LANCHER SuchenStatischenTexten/SuchenStatischenTexten/testMain.cpp)
 
-set(NORMAL_LANCHER SuchenStatischenTexten/SearchIt.cpp)
+set(NORMAL_LANCHER SuchenStatischenTexten/SuchenStatischenTexten/SearchIt.cpp)
 
 
 add_executable(SearchItTest ${TEST_LANCHER} ${SOURCE_FILES})

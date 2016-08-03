@@ -13,7 +13,9 @@
 */
 class TheText {
  private:
-  std::vector<TextWord> completeText; /**< Collection of all Words in the text as TextWord Objects */  
+  std::vector<TextWord> m_completeText; /**< Collection of all Words in the text as TextWord Objects */
+
+  std::string m_fileName;
  public:
   TheText(std::string fileName); /**< File that contains the text */  
 
@@ -28,6 +30,8 @@ class TheText {
   * @return Amount of exact matches
   */
   int exactMatchCount(const std::string word);
+
+  std::string name();
 };
 
 #endif //SEARCHIT_THETEXT_H

@@ -31,7 +31,7 @@ class SufTree {
     * @param endPoint True if this knot has no children
     */
     Knot(char usedChar, bool endPoint):element(usedChar), isLeaf(endPoint){
-      std::cout << "Creating new Knot with " << usedChar << " isLeaf=" << isLeaf << std::endl;
+      //std::cout << "Creating new Knot with " << usedChar << " isLeaf=" << isLeaf << std::endl;
     };
     /**
     * Creates new knots
