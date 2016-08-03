@@ -30,11 +30,13 @@ before_install:
  - sudo apt-get -qq update
  - sudo apt-get install -y libgtest-dev
  - pwd
- - "cd /usr/src/gtest && sudo cmake . && sudo cmake --build . && sudo mv libg* /usr/local/lib/ ; cd -"
-
+ - "cd /usr/src/gtest && sudo cmake . && sudo cmake --build . && sudo mv libg* /home/travis/build/algdat/grp01-algdatII/build/ ; cd -"
 
 script:
   - cd build
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER ../. && make
   - cp ../SuchenStatischenTexten/SuchenStatischenTexten/input.txt .
+  - cp ../SuchenStatischenTexten/Readme.md .
   - ./SearchItTest
+  - cmake -DCMAKE_CXX_COMPILER=$COMPILER ../SuchenStatischenTexten/unittest_SuchenStatischenTexten/. && make
+  - ./UnitTests
