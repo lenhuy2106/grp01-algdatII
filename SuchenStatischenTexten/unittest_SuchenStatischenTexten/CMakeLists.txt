@@ -13,4 +13,4 @@ set(SOURCE_FILES
 
 add_executable(UnitTests ${TEST_LANCHER} ${SOURCE_FILES})
 
-target_link_libraries(UnitTests libgtest libgtest_main)
+target_link_libraries(UnitTests libgtest libgtest_main SearchItLib)
