@@ -11,6 +11,8 @@
 #include <dirent.h>
 #include "TheText.h"
 
+#include <map>
+
 /**
  * Class used for searching in a directory.
  */
@@ -33,8 +35,20 @@ class DirFileSearch {
    * @param word The searched word.
    * @return
    */
-  std::map<std::string, unsigned int> exactSearch(const std::string word);
+  std::map<std::string, unsigned int> exactSearchCount(const std::string word);
 
+  std::map<std::string, std::vector<unsigned int>> exactSearchOccurances(const std::string word);
+
+  /**
+   * Add a new file for the search.
+   * @param fileName The file.
+   */
+  void addFile(const std::string fileName);
+
+  /**
+   * A list of all contained files.
+   * @return The list.
+   */
   std::vector<std::string> files();
 };
 

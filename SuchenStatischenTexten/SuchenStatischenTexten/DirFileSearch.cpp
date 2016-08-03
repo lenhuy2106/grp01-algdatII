@@ -20,12 +20,20 @@ DirFileSearch::DirFileSearch(const std::string folderPath, const std::string fil
   }
 }
 
-std::map<std::string, unsigned int> DirFileSearch::exactSearch(const std::string word) {
+std::map<std::string, unsigned int> DirFileSearch::exactSearchCount(const std::string word) {
   std::map<std::string, unsigned int> foundCounts;
   for (auto &&file : allFiles) {
     foundCounts.insert(std::pair<std::string, unsigned int>(file.name(),file.exactMatchCount(word)));
   }
   return foundCounts;
+}
+
+std::map<std::string, std::vector<unsigned int>> DirFileSearch::exactSearchOccurances(const std::string word) {
+  std::map<std::string, std::vector<unsigned int>> result;
+  for (auto &&file : allFiles) {
+    result.insert(std::pair<std::string, std::vector<unsigned int>>(file.name(),file.getOccurances(word)));
+  }
+  return result;
 }
 
 std::vector<std::string> DirFileSearch::files() {
@@ -34,4 +42,7 @@ std::vector<std::string> DirFileSearch::files() {
     result.push_back(file.name());
   }
   return result;
+}
+void DirFileSearch::addFile(const std::string fileName) {
+  allFiles.push_back(TheText(fileName));
 }
