@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
 {
   std::cout << "Travis make Test successful." << std::endl;
 
-  TextWord test("blub");
+  TextWord test("blub", 0);
 
   if (test.exactMatch("b")) {
     std::cout << "found b !!! error" << std::endl;

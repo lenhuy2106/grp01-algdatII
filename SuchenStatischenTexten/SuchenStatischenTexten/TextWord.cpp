@@ -3,11 +3,11 @@
 //
 
 #include "TextWord.h"
-bool TextWord::addInstance(const std::string word) {
+bool TextWord::addInstance(const std::string word, const unsigned int index) {
   // std::cout << "checking instance with " << word << std::endl;
     if(this->exactMatch(word)) {
       std::cout << "Incremented " << this->word() << std::endl;
-      count += 1;
+      occurances.push_back(index);
       return true;
     }
   return false;
@@ -31,7 +31,7 @@ bool TextWord::partialMatch(const std::string word) {
 void TextWord::status() {
 
   std::cout << "####################" << std::endl << "Word: " << value
-            << " Instances: " << count << std::endl;
+            << " Instances: " << wordCount() << std::endl;
   matchTree.print();
   std::cout << "####################" << std::endl;
 }
@@ -39,6 +39,6 @@ std::string TextWord::word() const {
   return value;
 }
 
-int TextWord::wordCount() const {
-  return count;
+unsigned int TextWord::wordCount() const {
+  return static_cast<unsigned int>(occurances.size());
 }

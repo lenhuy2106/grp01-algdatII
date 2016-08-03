@@ -8,14 +8,16 @@ TheText::TheText(std::string fileName) : m_fileName(fileName){
   std::cout << "####################" << std::endl
             << "# Reading File" << std::endl
             << "####################" << std::endl;
-  for (auto &&word  : words) {
+  for (int index = 0; index < words.size(); ++index)
+  //for (auto &&word  : words)
+  {
     // std::cout << "Adding " << word << " to the list." << std::endl;
     bool existed = false;
     for (auto &&textWord  : m_completeText) {
-      existed |= textWord.addInstance(word);
+      existed |= textWord.addInstance(words.at(index),index);
     }
     if (!existed) {
-      m_completeText.push_back(TextWord(word));
+      m_completeText.push_back(TextWord(words.at(index),index));
     }
   }
   std::cout << "####################" << std::endl

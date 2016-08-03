@@ -14,16 +14,18 @@
 */
 class TextWord {
  private:
-  const unsigned long length; /**< Length of the word */  
-  int count; /**< Amount of times the word is in text */  
-  const std::string value; /**< Word as String */  
-  const SufTree matchTree; /**< Word as Suffixtree */  
+  const unsigned long length; /**< Length of the word. */
+  //int count; /**< Amount of times the word is in text. */
+  const std::string value; /**< Word as String. */
+  const SufTree matchTree; /**< Word as Suffixtree. */
+  std::vector<unsigned int> occurances; /**< All occurances in the text. */
  public:
   /**
   * Constructor
   * @param word Word
   */
-  TextWord(const std::string word): value(word), length(word.length()),matchTree(word), count(1){
+  TextWord(const std::string word, const unsigned int index): value(word), length(word.length()),matchTree(word){
+    occurances.push_back(index);
     std::cout << "+++ Created new Entry with " << word << std::endl;
   }
   /**
@@ -31,7 +33,7 @@ class TextWord {
   * @param word searched word
   * @return true if this word is searched word
   */
-  bool addInstance(const std::string word);
+  bool addInstance(const std::string word, const unsigned int index);
   /**
   * Checks if Word is exacly the searched word
   * @param word searched word
@@ -52,7 +54,7 @@ class TextWord {
   *  Returns how often word is contained in text
   * @return word count
   */
-  int wordCount() const;
+  unsigned int wordCount() const;
   /**
   * prints word, wordcount and tree to console
   */
