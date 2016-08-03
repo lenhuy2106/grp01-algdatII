@@ -10,12 +10,10 @@
 
 ## Aufteilung
 
-Noch offen
-
- - @Sony2011
- - @Nuklearchetyp
- - @wishmaster-
- - @Falknor
+ - @Sony2011      GoogleTest und Tests schreiben
+ - @Nuklearchetyp Dokummentation
+ - @wishmaster-   Präsentationen
+ - @Falknor       C++ Implementierung
 
 Genauere Informationen dann im Github Wiki
 
