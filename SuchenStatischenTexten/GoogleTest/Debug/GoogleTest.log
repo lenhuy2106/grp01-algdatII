@@ -1,5 +1,5 @@
-﻿Der Buildvorgang wurde am 02.08.2016 16:07:32 gestartet.
-     1>Projekt "C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\GoogleTest\GoogleTest.vcxproj" auf Knoten "2", Build Ziel(e).
+﻿Der Buildvorgang wurde am 03.08.2016 11:29:43 gestartet.
+     1>Projekt "C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\GoogleTest\GoogleTest.vcxproj" auf Knoten "2", Rebuild Ziel(e).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "..\libs\gtest-1.7.0\src\gtest-all.cc" "..\libs\gtest-1.7.0\src\gtest_main.cc"
          gtest_main.cc
@@ -9,8 +9,8 @@
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\Debug\GoogleTest.lib" /NOLOGO "Debug\gtest-all.obj"
          Debug\gtest_main.obj
          GoogleTest.vcxproj -> C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\Debug\GoogleTest.lib
-     1>Die Erstellung des Projekts "C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\GoogleTest\GoogleTest.vcxproj" ist abgeschlossen, Build Ziel(e).
+     1>Die Erstellung des Projekts "C:\Users\Tim\Documents\grp01-algdatII\SuchenStatischenTexten\GoogleTest\GoogleTest.vcxproj" ist abgeschlossen, Rebuild Ziel(e).
 
 Build erfolgreich.
 
-Verstrichene Zeit 00:00:02.14
+Verstrichene Zeit 00:00:05.58
